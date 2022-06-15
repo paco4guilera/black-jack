@@ -1,6 +1,6 @@
 html,
 body {
-    /*  margin: 0px;*/
+    margin: 0px;
 
     background-color: #2f4f30;
     color: white;
@@ -20,5 +20,5 @@ body {
 }
 #computer-carts,
 #player-carts {
-    height: 240px;
+    min-height: 240px;
 }

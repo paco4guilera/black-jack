@@ -17,26 +17,30 @@
         <header class="titulo">Black Jack</header>
         <div class="row mt-2">
             <div id="divButtons" class="col text-center">
-                <button id="btnNewGame" class="btn btn-danger">New Game</button>
-                <button id="btnRequestCart" class="btn btn-primary">
-                    Request A Cart
+                <button id="btnNewGame" class="btn btn-success">
+                    New Game
                 </button>
-                <button id="btnStop" class="btn btn-primary">Stop</button>
+                <button id="btnRequestCart" class="btn btn-primary">
+                    Request A Card
+                </button>
+                <button id="btnStop" class="btn btn-danger">Stop</button>
             </div>
         </div>
-        <div class="row minh-100 justify-content-center">
-            <div class="row container mt-2">
-                <div class="col">
-                    <h1>Player - <small>0</small></h1>
-                    <div id="player-carts"></div>
-                </div>
+
+        <div class="row container mt-2">
+            <div class="col">
+                <h1>Player - <small>0</small></h1>
+                <div id="player-carts"></div>
             </div>
-            <div class="row container mt-2">
-                <div class="col">
-                    <h1>Computer - <small>0</small></h1>
-                    <div id="computer-carts"></div>
-                </div>
+        </div>
+        <div class="row container mt-2">
+            <div class="col">
+                <h1>Computer - <small>0</small></h1>
+                <div id="computer-carts"></div>
             </div>
+        </div>
+        <div class="row mt-2">
+            <div id="message" class="col text-center"></div>
         </div>
         <script
             type="text/javascript"

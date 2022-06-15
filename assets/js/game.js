@@ -17,6 +17,9 @@ const btnStop = document.querySelector("#btnStop");
 const pointsHTML = document.querySelectorAll("small");
 const divPlayerCarts = document.querySelector("#player-carts");
 const divComputerCarts = document.querySelector("#computer-carts");
+const message = document.querySelector("#message");
+console.log(message);
+console.log(divPlayerCarts);
 btnStop.disabled = true;
 /* FUNCTIONS */
 const createDeck = () => {
@@ -88,16 +91,25 @@ const computersTurn = () => {
             computerPoints === playerPoints
         ) {
             //console.log("tie");
-            alert("tie");
+            //alert("tie");
+            const messageG = document.createElement("h1");
+            messageG.innerText = "TIE";
+            message.append(messageG);
         } else if (
             playerPoints > 21 ||
             (computerPoints >= playerPoints && computerPoints <= 21)
         ) {
             //console.log("loser");
-            alert("You lose");
+            //alert("You lose");
+            const messageG = document.createElement("h1");
+            messageG.innerText = "LOSER";
+            message.append(messageG);
         } else {
             //console.log("winner");
-            alert("You win!");
+            //alert("You win!");
+            const messageG = document.createElement("h1");
+            messageG.innerText = "WINNER";
+            message.append(messageG);
         }
     }, 100);
 };
@@ -134,7 +146,8 @@ btnNewGame.addEventListener("click", () => {
     divComputerCarts.innerHTML = "";
     divPlayerCarts.innerHTML = "";
     btnRequestCart.disabled = false;
-    btnStop.disabled = false;
+    //btnStop.disabled = true;
+    message.innerHTML = "";
 });
 /* STOPS PLAYER'S TRY */
 btnStop.addEventListener("click", () => {

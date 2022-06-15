@@ -16,52 +16,32 @@
     <body>
         <header class="titulo">Black Jack</header>
         <div class="row mt-2">
-            <div class="col text-center">
-                <button class="btn btn-danger">Nuevo Juego</button>
-                <button class="btn btn-primary">Pedir Cartas</button>
-                <button class="btn btn-primary">Detener</button>
+            <div id="divButtons" class="col text-center">
+                <button id="btnNewGame" class="btn btn-danger">New Game</button>
+                <button id="btnRequestCart" class="btn btn-primary">
+                    Request A Cart
+                </button>
+                <button id="btnStop" class="btn btn-primary">Stop</button>
             </div>
         </div>
         <div class="row minh-100 justify-content-center">
             <div class="row container mt-2">
                 <div class="col">
-                    <h1>Jugador - <small>0</small></h1>
-                    <div id="jugador-cartas">
-                        <img
-                            class="carta"
-                            src="assets/carts/2C.png"
-                            alt=""
-                            srcset=""
-                        />
-                        <img
-                            class="carta"
-                            src="assets/carts/2C.png"
-                            alt=""
-                            srcset=""
-                        />
-                    </div>
+                    <h1>Player - <small>0</small></h1>
+                    <div id="player-carts"></div>
                 </div>
             </div>
             <div class="row container mt-2">
                 <div class="col">
-                    <h1>Computadora - <small>0</small></h1>
-                    <div id="computadora-cartas">
-                        <img
-                            class="carta"
-                            src="assets/carts/3C.png"
-                            alt=""
-                            srcset=""
-                        />
-                        <img
-                            class="carta"
-                            src="assets/carts/3C.png"
-                            alt=""
-                            srcset=""
-                        />
-                    </div>
+                    <h1>Computer - <small>0</small></h1>
+                    <div id="computer-carts"></div>
                 </div>
             </div>
         </div>
-        <script src="assets/js/juego.js"></script>
+        <script
+            type="text/javascript"
+            src="assets/js/underscore-min.js"
+        ></script>
+        <script src="assets/js/game.js"></script>
     </body>
 </html>
